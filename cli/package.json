@@ -13,7 +13,10 @@
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target node",
     "dev": "bun run src/index.ts",
-    "prepublishOnly": "bun run build"
+    "sync:assets": "node scripts/sync-assets.mjs",
+    "check:assets": "node scripts/sync-assets.mjs --check",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run sync:assets && npm run typecheck && bun run build"
   },
   "keywords": [
     "ui",

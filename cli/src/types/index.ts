@@ -1,4 +1,5 @@
 export type AIType = 'claude' | 'cursor' | 'windsurf' | 'antigravity' | 'copilot' | 'kiro' | 'roocode' | 'codex' | 'qoder' | 'gemini' | 'trae' | 'opencode' | 'continue' | 'codebuddy' | 'droid' | 'kilocode' | 'warp' | 'augment' | 'all';
+export type ConcreteAIType = Exclude<AIType, 'all'>;
 
 export type InstallType = 'full' | 'reference';
 
@@ -46,7 +47,7 @@ export const AI_TYPES: AIType[] = ['claude', 'cursor', 'windsurf', 'antigravity'
 // Legacy folder mapping for backward compatibility with ZIP-based installs.
 // Note: .shared is included for platforms that used ZIP installs. Post-ZIP platforms
 // (kilocode, warp, augment) include .shared as a no-op for consistent uninstall behavior.
-export const AI_FOLDERS: Record<Exclude<AIType, 'all'>, string[]> = {
+export const AI_FOLDERS: Record<ConcreteAIType, string[]> = {
   claude: ['.claude'],
   cursor: ['.cursor', '.shared'],
   windsurf: ['.windsurf', '.shared'],

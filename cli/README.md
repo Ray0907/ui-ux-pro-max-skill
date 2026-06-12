@@ -30,19 +30,22 @@ uipro init --ai continue    # Continue (Skills)
 uipro init --ai all         # All assistants
 
 # Options
-uipro init --offline        # Skip GitHub download, use bundled assets only
+uipro init --offline        # Compatibility flag; installs bundled templates
 uipro init --force          # Overwrite existing files
 
 # Other commands
 uipro versions              # List available versions
-uipro update                # Update to latest version
+uipro update                # Refresh skill files from installed CLI package
 ```
 
 ## How It Works
 
-By default, `uipro init` tries to download the latest release from GitHub to ensure you get the most up-to-date version. If the download fails (network error, rate limit), it automatically falls back to the bundled assets included in the CLI package.
+`uipro init` generates assistant-specific files from the templates bundled with the installed CLI package. To get newer templates and data, update the package first:
 
-Use `--offline` to skip the GitHub download and use bundled assets directly.
+```bash
+npm install -g @ray0907/uipro-cli@latest
+uipro init --ai codex
+```
 
 ## Development
 
@@ -55,6 +58,12 @@ bun run src/index.ts --help
 
 # Build
 bun run build
+
+# Sync bundled CLI assets from the source skill
+npm run sync:assets
+
+# Verify bundled assets are current before publishing
+npm run check:assets
 
 # Link for local testing
 bun link

@@ -4,7 +4,7 @@ import { homedir } from 'node:os';
 import chalk from 'chalk';
 import ora from 'ora';
 import prompts from 'prompts';
-import type { AIType } from '../types/index.js';
+import type { AIType, ConcreteAIType } from '../types/index.js';
 import { AI_TYPES, AI_FOLDERS } from '../types/index.js';
 import { detectAIType, getAITypeDescription } from '../utils/detect.js';
 import { logger } from '../utils/logger.js';
@@ -17,7 +17,7 @@ interface UninstallOptions {
 /**
  * Remove skill directory for a given AI type
  */
-async function removeSkillDir(baseDir: string, aiType: Exclude<AIType, 'all'>): Promise<string[]> {
+async function removeSkillDir(baseDir: string, aiType: ConcreteAIType): Promise<string[]> {
   const folders = AI_FOLDERS[aiType];
   const removed: string[] = [];
 

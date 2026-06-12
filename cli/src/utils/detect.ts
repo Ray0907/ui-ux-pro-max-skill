@@ -1,14 +1,14 @@
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import type { AIType } from '../types/index.js';
+import type { AIType, ConcreteAIType } from '../types/index.js';
 
 interface DetectionResult {
-  detected: AIType[];
+  detected: ConcreteAIType[];
   suggested: AIType | null;
 }
 
 export function detectAIType(cwd: string = process.cwd()): DetectionResult {
-  const detected: AIType[] = [];
+  const detected: ConcreteAIType[] = [];
 
   if (existsSync(join(cwd, '.claude'))) {
     detected.push('claude');
