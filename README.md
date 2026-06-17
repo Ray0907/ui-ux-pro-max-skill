@@ -1,16 +1,21 @@
 # [UI UX Pro Max](https://uupm.cc)
+
+> Community-maintained fork of [`nextlevelbuilder/ui-ux-pro-max-skill`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill).
+>
+> This fork keeps fixes, releases, and package updates moving while upstream maintenance is inactive.
+> The original project remains licensed under the MIT License.
  
 <p align="center">
-  <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/releases"><img src="https://img.shields.io/github/v/release/nextlevelbuilder/ui-ux-pro-max-skill?style=for-the-badge&color=blue" alt="GitHub Release"></a>
+  <a href="https://github.com/Ray0907/ui-ux-pro-max-skill/releases"><img src="https://img.shields.io/github/v/release/Ray0907/ui-ux-pro-max-skill?style=for-the-badge&color=blue" alt="GitHub Release"></a>
   <img src="https://img.shields.io/badge/reasoning_rules-161-green?style=for-the-badge" alt="161 Reasoning Rules">
   <img src="https://img.shields.io/badge/UI_styles-67-purple?style=for-the-badge" alt="67 UI Styles">
   <img src="https://img.shields.io/badge/python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.x">
-  <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/nextlevelbuilder/ui-ux-pro-max-skill?style=for-the-badge&color=green" alt="License"></a>
+  <a href="https://github.com/Ray0907/ui-ux-pro-max-skill/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Ray0907/ui-ux-pro-max-skill?style=for-the-badge&color=green" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/v/uipro-cli?style=flat-square&logo=npm&label=CLI" alt="npm"></a>
-  <a href="https://www.npmjs.com/package/uipro-cli"><img src="https://img.shields.io/npm/dm/uipro-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/@ray0907/uipro-cli"><img src="https://img.shields.io/npm/v/%40ray0907%2Fuipro-cli?style=flat-square&logo=npm&label=Community%20CLI" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/@ray0907/uipro-cli"><img src="https://img.shields.io/npm/dm/%40ray0907%2Fuipro-cli?style=flat-square&label=downloads" alt="npm downloads"></a>
   <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/stargazers"><img src="https://img.shields.io/github/stars/nextlevelbuilder/ui-ux-pro-max-skill?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://paypal.me/uiuxpromax"><img src="https://img.shields.io/badge/PayPal-Support%20Development-00457C?style=flat-square&logo=paypal&logoColor=white" alt="PayPal"></a>
 </p>
@@ -266,7 +271,7 @@ Install directly in Claude Code with two commands:
 
 ```bash
 # Install CLI globally
-npm install -g uipro-cli
+npm install -g @ray0907/uipro-cli
 
 # Go to your project
 cd /path/to/your/project
@@ -460,7 +465,7 @@ The codebase has been restructured to use a **template-based generation system**
 **Always use the CLI to install:**
 
 ```bash
-npm install -g uipro-cli
+npm install -g @ray0907/uipro-cli
 uipro init --ai <platform>
 ```
 

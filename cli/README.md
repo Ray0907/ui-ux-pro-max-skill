@@ -1,11 +1,13 @@
-# uipro-cli
+# @ray0907/uipro-cli
 
-CLI to install UI/UX Pro Max skill for AI coding assistants.
+Community-maintained CLI to install UI/UX Pro Max skill for AI coding assistants.
+
+This package is published from the community-maintained fork at `Ray0907/ui-ux-pro-max-skill`.
 
 ## Installation
 
 ```bash
-npm install -g uipro-cli
+npm install -g @ray0907/uipro-cli
 ```
 
 ## Usage

@@ -19,7 +19,7 @@ const program = new Command();
 
 program
   .name('uipro')
-  .description('CLI to install UI/UX Pro Max skill for AI coding assistants')
+  .description('Community-maintained CLI to install UI/UX Pro Max skill for AI coding assistants')
   .version(pkg.version);
 
 program
