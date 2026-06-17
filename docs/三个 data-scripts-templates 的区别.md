@@ -24,7 +24,7 @@
 2. .claude/skills 下的 data、scripts 用 symlink 指回 src（见下方「恢复符号链接」）。
 3. 发布 npm 前执行：
    ```bash
-   cp -r src/ui-ux-pro-max/data/* cli/assets/data/
-   cp -r src/ui-ux-pro-max/scripts/* cli/assets/scripts/
-   cp -r src/ui-ux-pro-max/templates/* cli/assets/templates/
+   cd cli
+   npm run sync:assets
+   npm run check:assets
    ```
