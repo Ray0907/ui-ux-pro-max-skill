@@ -1,8 +1,9 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "uxpro-cli",
+      "name": "@ray0907/uipro-cli",
       "dependencies": {
         "chalk": "^5.3.0",
         "commander": "^12.1.0",
